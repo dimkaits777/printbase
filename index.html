@@ -1,239 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Print Universe - Креативные 3D модели для печати</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>3D Print Universe | Premium STL Models & Files</title>
+    <meta name="description" content="Download top-quality 3D printable models for your printer. Dragon statues, toys, home decor, and fashion accessories. Commercial license included. Instant download.">
+    
+    <!-- Open Graph for Pinterest Preview -->
+    <meta property="og:title" content="Create Amazing 3D Prints">
+    <meta property="og:description" content="Access 1000+ Professional 3D STL Files. Download instantly.">
+    <meta property="og:image" content="https://www.creativefabrica.com/wp-content/uploads/2026/02/24/Cute-Flexi-Axolotl-3D-Printing-143183121-1.png">
+    <meta property="og:url" content="https://your-site-url.com">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-cube"></i>
-                <span>3D PRINT UNIVERSE</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#toys">Игрушки</a></li>
-                <li><a href="#home-decor">Декор</a></li>
-                <li><a href="#dragons">Драконы</a></li>
-                <li><a href="#jewelry">Украшения</a></li>
-                <li><a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-nav">Все модели</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <div class="logo">
+            <i class="fa-solid fa-cube"></i> 3D UNIVERSE
+        </div>
+        <ul class="nav-links">
+            <li><a href="#toys">Toys</a></li>
+            <li><a href="#decor">Home Decor</a></li>
+            <li><a href="#dragons">Dragons</a></li>
+            <li><a href="#fashion">Fashion</a></li>
+            <li><a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-nav">Browse All</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
 
-    <!-- Hero Section with Video -->
-    <section id="home" class="hero">
-        <div class="video-background">
-            <video autoplay muted loop playsinline>
-                <source src="video/banner.mp4" type="video/mp4">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline poster="assets/images/bg.jpg">
+                <source src="assets/video/banner.mp4" type="video/mp4">
             </video>
-            <div class="video-overlay"></div>
+            <div class="overlay"></div>
         </div>
-        <div class="hero-content">
-            <h1 class="glitch" data-text="3D PRINT UNIVERSE">3D PRINT UNIVERSE</h1>
-            <p class="subtitle">Откройте мир безграничных возможностей 3D печати</p>
+        <div class="hero-content container">
+            <h1>Create Your Masterpiece</h1>
+            <p>Discover thousands of professional STL files. From cute animals to epic dragons.</p>
             <div class="hero-buttons">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-primary">
-                    <i class="fas fa-download"></i> Скачать модели
-                </a>
-                <a href="#toys" class="btn-secondary">
-                    <i class="fas fa-chevron-down"></i> Смотреть каталог
-                </a>
-            </div>
-            <div class="stats">
-                <div class="stat-item">
-                    <i class="fas fa-cubes"></i>
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Моделей</span>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <span class="stat-number">10K+</span>
-                    <span class="stat-label">Клиентов</span>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-star"></i>
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Качество</span>
-                </div>
+                <a href="#products-grid" class="btn-primary"><i class="fa-solid fa-download"></i> Get Access Now</a>
+                <a href="#categories" class="btn-secondary">View Collections</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </section>
+    </header>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <i class="fas fa-bolt"></i>
-                    <h3>Мгновенная загрузка</h3>
-                    <p>Получите файлы сразу после покупки</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Коммерческая лицензия</h3>
-                    <p>Используйте модели для бизнеса</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-sync-alt"></i>
-                    <h3>Регулярные обновления</h3>
-                    <p>Новые модели каждую неделю</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-headset"></i>
-                    <h3>Поддержка 24/7</h3>
-                    <p>Помощь в любое время</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Toys Section -->
-    <section id="toys" class="category-section">
-        <div class="container">
+    <!-- Main Content -->
+    <main id="categories" class="container">
+        
+        <!-- Category: Toys -->
+        <section id="toys" class="category-section">
             <div class="section-header">
-                <h2><i class="fas fa-robot"></i> 3D ИГРУШКИ</h2>
-                <p>Креативные игрушки и фигурки для печати</p>
+                <h2><i class="fa-solid fa-paw"></i> Cute Toys & Figures</h2>
+                <p>Flexible characters, animal prints, and cookie cutters perfect for kids.</p>
             </div>
-            <div class="products-grid" id="toys-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="grid-toys">
+                <!-- JS Injects Products Here -->
             </div>
-            <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть все игрушки <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Home Decor Section -->
-    <section id="home-decor" class="category-section alt-bg">
-        <div class="container">
+        <!-- Category: Decor -->
+        <section id="decor" class="category-section alt-bg">
             <div class="section-header">
-                <h2><i class="fas fa-home"></i> ДОМАШНИЙ ДЕКОР</h2>
-                <p>Стильные элементы интерьера для вашего дома</p>
+                <h2><i class="fa-solid fa-house-chimney"></i> Home Decor & Organization</h2>
+                <p>Modern planters, trinket dishes, and stylish organizers.</p>
             </div>
-            <div class="products-grid" id="decor-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="grid-decor">
+                <!-- JS Injects Products Here -->
             </div>
-            <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть весь декор <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Dragons Section -->
-    <section id="dragons" class="category-section">
-        <div class="container">
+        <!-- Category: Dragons -->
+        <section id="dragons" class="category-section">
             <div class="section-header">
-                <h2><i class="fas fa-dragon"></i> ДРАКОНЫ</h2>
-                <p>Фантастические драконы и мифические существа</p>
+                <h2><i class="fa-solid fa-dragon"></i> Dragon Collection</h2>
+                <p>Epic fantasy statues, bookends, and detailed miniature scales.</p>
             </div>
-            <div class="products-grid" id="dragons-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="grid-dragons">
+                <!-- JS Injects Products Here -->
             </div>
-            <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть всех драконов <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Jewelry & Fashion Section -->
-    <section id="jewelry" class="category-section alt-bg">
-        <div class="container">
+        <!-- Category: Fashion -->
+        <section id="fashion" class="category-section alt-bg">
             <div class="section-header">
-                <h2><i class="fas fa-gem"></i> УКРАШЕНИЯ И МОДА</h2>
-                <p>Уникальные украшения и модные аксессуары</p>
+                <h2><i class="fa-solid fa-gem"></i> Jewelry & Fashion</h2>
+                <p>Wearable glasses, unique earrings, and texture rollers for artisans.</p>
             </div>
-            <div class="products-grid" id="jewelry-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="grid-fashion">
+                <!-- JS Injects Products Here -->
             </div>
-            <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть все украшения <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Готовы начать печатать?</h2>
-            <p>Получите доступ к сотням профессиональных 3D моделей прямо сейчас</p>
-            <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-cta">
-                <i class="fas fa-rocket"></i> Начать сейчас
-            </a>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>3D PRINT UNIVERSE</h3>
-                    <p>Ваш источник качественных 3D моделей для печати</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Категории</h3>
-                    <ul>
-                        <li><a href="#toys">Игрушки</a></li>
-                        <li><a href="#home-decor">Домашний декор</a></li>
-                        <li><a href="#dragons">Драконы</a></li>
-                        <li><a href="#jewelry">Украшения</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Информация</h3>
-                    <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Условия использования</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Партнерская программа</h3>
-                    <p>Присоединяйтесь к Creative Fabrica</p>
-                    <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-footer">
-                        Узнать больше
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 3D Print Universe. Все права защищены.</p>
-                <p class="affiliate-disclosure">Мы используем партнерские ссылки. При покупке мы можем получить комиссию.</p>
-            </div>
+            <p>&copy; 2026 3D Print Universe.</p>
+            <p class="disclosure">Disclosure: This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
