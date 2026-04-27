@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Print Universe - Креативные 3D модели для печати</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>3D Print Store - Premium 3D Printed Products | Toys, Home Decor, Dragons, Jewelry</title>
+    <meta name="description" content="Discover unique 3D printed products including toys, home decor, dragon figurines, and fashion jewelry. High-quality prints shipped across the USA.">
+    <meta name="keywords" content="3D printing, 3D printed toys, home decor, dragon figurines, 3D jewelry, custom 3D prints, STL files">
+    <meta name="author" content="3D Print Store">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.3dprintstore.com/">
+    <meta property="og:title" content="3D Print Store - Premium 3D Printed Products">
+    <meta property="og:description" content="Discover unique 3D printed products including toys, home decor, dragon figurines, and fashion jewelry.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="3D Print Store - Premium 3D Printed Products">
+    <meta name="twitter:description" content="Discover unique 3D printed products including toys, home decor, dragon figurines, and fashion jewelry.">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.3dprintstore.com/">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "3D Print Store",
+        "url": "https://www.3dprintstore.com",
+        "logo": "https://www.3dprintstore.com/assets/images/logo.png",
+        "description": "Premium 3D printed products including toys, home decor, dragons, and jewelry",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+        },
+        "priceRange": "$$",
+        "telephone": "+1-XXX-XXX-XXXX"
+    }
+    </script>
+    
+    <!-- Pinterest Tag (Ready to add) -->
+    <!-- 
+    <script>
+    !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+    pintrk('load', 'YOUR_PINTEREST_TAG_ID');
+    pintrk('page');
+    </script>
+    <noscript><img src="https://ads.pinterest.com/?ad_id=YOUR_PINTEREST_TAG_ID&event=init" height="1" width="1" alt="" /></noscript>
+    -->
+    
+    <!-- Google Analytics (Ready to add) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
 </head>
 <body>
     <!-- Navigation -->
@@ -14,15 +83,15 @@
         <div class="container">
             <div class="logo">
                 <i class="fas fa-cube"></i>
-                <span>3D PRINT UNIVERSE</span>
+                <span>3D PRINT <span class="accent">STORE</span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#toys">Игрушки</a></li>
-                <li><a href="#home-decor">Декор</a></li>
-                <li><a href="#dragons">Драконы</a></li>
-                <li><a href="#jewelry">Украшения</a></li>
-                <li><a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-nav">Все модели</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#toys" class="nav-link">Toys</a></li>
+                <li><a href="#home-decor" class="nav-link">Home Decor</a></li>
+                <li><a href="#dragons" class="nav-link">Dragons</a></li>
+                <li><a href="#jewelry" class="nav-link">Jewelry</a></li>
+                <li><a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" rel="noopener noreferrer" class="btn-nav">All Models</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -35,37 +104,38 @@
     <!-- Hero Section with Video -->
     <section id="home" class="hero">
         <div class="video-background">
-            <video autoplay muted loop playsinline>
-                <source src="video/banner.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+                <source src="assets/video/hero-banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
             <div class="video-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1 class="glitch" data-text="3D PRINT UNIVERSE">3D PRINT UNIVERSE</h1>
-            <p class="subtitle">Откройте мир безграничных возможностей 3D печати</p>
+            <h1 class="glitch" data-text="3D PRINT STORE">3D PRINT <span class="gradient-text">STORE</span></h1>
+            <p class="subtitle">Discover unique handcrafted 3D printed products - from toys to home decor, dragons to jewelry</p>
             <div class="hero-buttons">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-primary">
-                    <i class="fas fa-download"></i> Скачать модели
+                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <i class="fas fa-shopping-cart"></i> Shop Now
                 </a>
                 <a href="#toys" class="btn-secondary">
-                    <i class="fas fa-chevron-down"></i> Смотреть каталог
+                    <i class="fas fa-chevron-down"></i> Browse Categories
                 </a>
             </div>
             <div class="stats">
                 <div class="stat-item">
                     <i class="fas fa-cubes"></i>
                     <span class="stat-number">500+</span>
-                    <span class="stat-label">Моделей</span>
+                    <span class="stat-label">Products</span>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-users"></i>
                     <span class="stat-number">10K+</span>
-                    <span class="stat-label">Клиентов</span>
+                    <span class="stat-label">Customers</span>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-star"></i>
                     <span class="stat-number">100%</span>
-                    <span class="stat-label">Качество</span>
+                    <span class="stat-label">Quality</span>
                 </div>
             </div>
         </div>
@@ -82,23 +152,23 @@
             <div class="feature-grid">
                 <div class="feature-card">
                     <i class="fas fa-bolt"></i>
-                    <h3>Мгновенная загрузка</h3>
-                    <p>Получите файлы сразу после покупки</p>
+                    <h3>Instant Download</h3>
+                    <p>Get your files immediately after purchase</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Коммерческая лицензия</h3>
-                    <p>Используйте модели для бизнеса</p>
+                    <h3>Commercial License</h3>
+                    <p>Use models for your business projects</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-sync-alt"></i>
-                    <h3>Регулярные обновления</h3>
-                    <p>Новые модели каждую неделю</p>
+                    <h3>Regular Updates</h3>
+                    <p>New models added every week</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-headset"></i>
-                    <h3>Поддержка 24/7</h3>
-                    <p>Помощь в любое время</p>
+                    <h3>24/7 Support</h3>
+                    <p>Help available anytime you need</p>
                 </div>
             </div>
         </div>
@@ -108,15 +178,15 @@
     <section id="toys" class="category-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-robot"></i> 3D ИГРУШКИ</h2>
-                <p>Креативные игрушки и фигурки для печати</p>
+                <h2><i class="fas fa-robot"></i> TOYS</h2>
+                <p>Creative toys and figurines for 3D printing</p>
             </div>
-            <div class="products-grid" id="toys-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="toys-grid" data-category="toys">
+                <!-- Products will be loaded dynamically from products.js -->
             </div>
             <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть все игрушки <i class="fas fa-arrow-right"></i>
+                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/?category=toys" target="_blank" rel="noopener noreferrer" class="btn-view-all">
+                    View All Toys <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -126,15 +196,15 @@
     <section id="home-decor" class="category-section alt-bg">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-home"></i> ДОМАШНИЙ ДЕКОР</h2>
-                <p>Стильные элементы интерьера для вашего дома</p>
+                <h2><i class="fas fa-home"></i> HOME DECOR</h2>
+                <p>Stylish interior elements for your home</p>
             </div>
-            <div class="products-grid" id="decor-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="decor-grid" data-category="home-decor">
+                <!-- Products will be loaded dynamically from products.js -->
             </div>
             <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть весь декор <i class="fas fa-arrow-right"></i>
+                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/?category=home-decor" target="_blank" rel="noopener noreferrer" class="btn-view-all">
+                    View All Decor <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -144,15 +214,15 @@
     <section id="dragons" class="category-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-dragon"></i> ДРАКОНЫ</h2>
-                <p>Фантастические драконы и мифические существа</p>
+                <h2><i class="fas fa-dragon"></i> DRAGONS</h2>
+                <p>Fantastic dragons and mythical creatures</p>
             </div>
-            <div class="products-grid" id="dragons-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="dragons-grid" data-category="dragons">
+                <!-- Products will be loaded dynamically from products.js -->
             </div>
             <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть всех драконов <i class="fas fa-arrow-right"></i>
+                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/?category=dragons" target="_blank" rel="noopener noreferrer" class="btn-view-all">
+                    View All Dragons <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -162,15 +232,15 @@
     <section id="jewelry" class="category-section alt-bg">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-gem"></i> УКРАШЕНИЯ И МОДА</h2>
-                <p>Уникальные украшения и модные аксессуары</p>
+                <h2><i class="fas fa-gem"></i> JEWELRY & FASHION</h2>
+                <p>Unique jewelry and fashion accessories</p>
             </div>
-            <div class="products-grid" id="jewelry-grid">
-                <!-- Products will be loaded dynamically -->
+            <div class="products-grid" id="jewelry-grid" data-category="jewelry">
+                <!-- Products will be loaded dynamically from products.js -->
             </div>
             <div class="section-footer">
-                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-view-all">
-                    Смотреть все украшения <i class="fas fa-arrow-right"></i>
+                <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/?category=jewelry" target="_blank" rel="noopener noreferrer" class="btn-view-all">
+                    View All Jewelry <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -179,10 +249,10 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Готовы начать печатать?</h2>
-            <p>Получите доступ к сотням профессиональных 3D моделей прямо сейчас</p>
-            <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-cta">
-                <i class="fas fa-rocket"></i> Начать сейчас
+            <h2>Ready to Start Printing?</h2>
+            <p>Get access to hundreds of professional 3D models right now</p>
+            <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" rel="noopener noreferrer" class="btn-cta">
+                <i class="fas fa-rocket"></i> Get Started Now
             </a>
         </div>
     </section>
@@ -192,44 +262,44 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>3D PRINT UNIVERSE</h3>
-                    <p>Ваш источник качественных 3D моделей для печати</p>
+                    <h3>3D PRINT <span class="accent">STORE</span></h3>
+                    <p>Your source for quality 3D print models and products</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Категории</h3>
+                    <h3>Categories</h3>
                     <ul>
-                        <li><a href="#toys">Игрушки</a></li>
-                        <li><a href="#home-decor">Домашний декор</a></li>
-                        <li><a href="#dragons">Драконы</a></li>
-                        <li><a href="#jewelry">Украшения</a></li>
+                        <li><a href="#toys">Toys</a></li>
+                        <li><a href="#home-decor">Home Decor</a></li>
+                        <li><a href="#dragons">Dragons</a></li>
+                        <li><a href="#jewelry">Jewelry & Fashion</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Информация</h3>
+                    <h3>Information</h3>
                     <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Партнерская программа</h3>
-                    <p>Присоединяйтесь к Creative Fabrica</p>
-                    <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" class="btn-footer">
-                        Узнать больше
+                    <h3>Partner Program</h3>
+                    <p>Join Creative Fabrica affiliate program</p>
+                    <a href="https://www.creativefabrica.com/3d-printing/ref/20531415/" target="_blank" rel="noopener noreferrer" class="btn-footer">
+                        Learn More
                     </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 3D Print Universe. Все права защищены.</p>
-                <p class="affiliate-disclosure">Мы используем партнерские ссылки. При покупке мы можем получить комиссию.</p>
+                <p>&copy; 2024 3D Print Store. All rights reserved.</p>
+                <p class="affiliate-disclosure">We use affiliate links. When you make a purchase, we may earn a commission.</p>
             </div>
         </div>
     </footer>
